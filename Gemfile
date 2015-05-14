@@ -1,4 +1,5 @@
 # A sample Gemfile
 source "https://rubygems.org"
 
-# gem "rails"
+gem 'jekyll-slim'
+gem 'slim', github: 'slim-template/slim'
