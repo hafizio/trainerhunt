@@ -1,0 +1,6 @@
+{
+  "name": "trainerhunt",
+  "root": "_site",
+  "clean_urls": true,
+  "error_page": "y"
+}
