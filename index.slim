@@ -32,9 +32,12 @@ layout: default
       p Just drop us a note and we will get
       p back to your in 3-5 working days.
     .col-lg-6
-      form
+      form action="//formspree.io/ibnukamy@gmail.com" method="POST"
         .form-group.form-inline
-          input.form-control placeholder="Name" type="text"
+          input type="hidden" name="_subject" value="New Message!"
+          input type="hidden" name="_cc" value="wanadli@gmail.com"
+          input type="text" name="_gotcha" style="display:none"
+          input.form-control placeholder="Name" type="text" name="_replyto"
           input.form-control placeholder="Phone" type="tel"
         .form-group
           input.form-control placeholder="Email" type="email"
