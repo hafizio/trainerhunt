@@ -3,3 +3,6 @@ exclude:
   - divshot-debug.log
 sass:
   style: compressed
+slim:
+  pretty: true
+  format: html5
