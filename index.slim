@@ -37,11 +37,11 @@ layout: default
           input type="hidden" name="_subject" value="New Message!"
           input type="hidden" name="_cc" value="wanadli@gmail.com"
           input type="text" name="_gotcha" style="display:none"
-          input.form-control placeholder="Name" type="text" name="_replyto"
-          input.form-control placeholder="Phone" type="tel"
+          input.form-control placeholder="Name" type="text" name="name"
+          input.form-control placeholder="Phone" type="tel" name="phone"
         .form-group
-          input.form-control placeholder="Email" type="email"
+          input.form-control placeholder="Email" type="email" name="_replyto"
         .form-group
-          textarea.form-control placeholder="Message" type="text"
+          textarea.form-control placeholder="Message" type="text" name="message"
         .form-group
-          button.btn.btn-default type="submit" Send
+          button.btn.btn-default type="submit" value="send" Send
