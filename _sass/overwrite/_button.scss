@@ -1,12 +1,13 @@
 $color-orange: #FFBC2A;
+$brand-primary: #FA6831;
 
 .btn-orange {
-  color: $color-orange;
-  border: 2px solid $color-orange;
+  color: $brand-primary;
+  border: 2px solid $brand-primary;
   background: transparent;
 
   &:hover {
     color: white;
-    background-color: $color-orange;
+    background-color: $brand-primary;
   }
 }

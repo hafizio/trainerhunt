@@ -1,4 +1,5 @@
 $color-orange: #FFBC2A;
+$brand-primary: #FA6831;
 
 .jumbotron {
   background-color: white;
@@ -13,16 +14,35 @@ hr {
 }
 
 .orange {
-  color: $color-orange;
+  color: $brand-primary;
+}
+
+.space-top {
+  margin-top: 50px;
 }
 
 #quote {
+  margin-top: 20px;
   background: url('https://s3-ap-southeast-1.amazonaws.com/trainerhunt/assets/images/bg/discuss.jpg') no-repeat scroll;
   background-size: 100%;
   color: white;
   text-align: center;
   padding: 70px;
-  text-shadow: 2px 2px grey;
+
+  ul {
+    float: right;
+    display: table; 
+    margin-top: 50px;
+
+    li {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+  p {
+    margin-bottom: 0px;
+  }
 }
 
 // forms
@@ -31,27 +51,13 @@ input[type="radio"] {
   margin-right: 5px;
 }
 
-//input[type="tel"] {
-  //border-right: none;
-  //border-left: none;
-//}
-
-//input[type="text"] {
-  //border-top-left-radius: 4px;
-  //border-bottom-left-radius: 4px;
-//}
-
-//input[type="email"] {
-  //border-top-right-radius: 4px;
-  //border-bottom-right-radius: 4px;
-//}
+input[type="tel"] {
+  margin-right: 10px;
+  margin-left: 10px;
+}
 
 .form {
   padding: 15px;
-}
-
-.form-control {
-  width: 220px;
 }
 
 // footer

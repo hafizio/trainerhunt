@@ -25,38 +25,48 @@ layout: default
           p Not a HRDF registered entity? That’s okay because we are and you are more than welcome to ride on us as long as you are a certified HRDF trainer. Be part of TrainerHunt’s family because we always take care of our own.
     .col-lg-6#quote
       h3 "I love to share and educate. I never wanted to be bogged down by the business. So I’m going to let TrainerHunt take care of that."
-      p Dr William Teh
-      p Lean Management Expert
-  .row
-    .col-lg-6
+      ul.list-inline
+        li
+          p Dr William Teh
+          p Lean Management Expert
+        li
+          img src="https://s3-ap-southeast-1.amazonaws.com/trainerhunt/assets/images/avatar/drwilliam.png" height="100" width="100" alt="drwilliam"
+
+  .row.space-top
+    .col-lg-5
       h3.bold What are you waiting for?
       hr
-      p Drop us your details and let’s start doing business.
-    .col-lg-6
+      p.text-right Drop us your details and let’s start doing business.
+    .col-lg-7
       form.form
-        .form-group
+        .form-inline.form-group.col-lg-12
           input.form-control placeholder="Name" type="text"
-        .form-group
           input.form-control placeholder="Phone" type="tel"
-        .form-group
           input.form-control placeholder="Email" type="email"
-        .form-group
-          label What is your category of training?
-          br
-          select.selectpicker multiple="" 
-            option value="leadership" Leadership
-            option value="management" Management
-            option value="sales" Sales
-            option value="marketing" Marketing
-        .form-group
-          label Are you a certified HRDF trainer?
-          br
-          input name="hrdf_trainer" type="radio" value="true" Yes
-          input name="hrdf_trainer" type="radio" value="false" No
-        .form-group
-          label Do you own a HRDF registered company?
-          br
-          input name="hrdf_company" type="radio" value="true" Yes
-          input name="hrdf_company" type="radio" value="false" No
-        .form-group
-          button.btn.btn-orange type="submit" value="send" Send
+        .form-inline.form-group.space-top
+          .col-lg-4
+            label Area of Training
+            br
+            select.selectpicker multiple="" 
+              option value="leadership" Leadership
+              option value="management" Management
+              option value="sales" Sales
+              option value="marketing" Marketing
+          .col-lg-8
+            .col-lg-12
+              .col-lg-12
+                label HRDF Status:
+            .col-lg-12
+              .col-lg-8
+                label HRDF certified trainer?
+              .col-lg-4
+                input name="hrdf_trainer" type="radio" value="true" Yes
+                input name="hrdf_trainer" type="radio" value="false" No
+            .col-lg-12
+              .col-lg-8
+                label HRDF registered company?
+              .col-lg-4
+                input name="hrdf_company" type="radio" value="true" Yes
+                input name="hrdf_company" type="radio" value="false" No
+        .form-inline.form-group.col-lg-12
+          button.btn.btn-orange type="submit" value="send" Let's Get Started
