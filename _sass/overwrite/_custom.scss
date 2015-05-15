@@ -25,6 +25,7 @@ hr {
   text-shadow: 2px 2px grey;
 }
 
+// forms
 input[type="radio"] {
   margin-left: 5px;
   margin-right: 5px;
@@ -45,10 +46,26 @@ input[type="email"] {
   border-bottom-right-radius: 4px;
 }
 
+.form {
+  padding: 15px;
+}
+
 .form-control {
   border-radius: 0px;
 }
 
+// footer
 #footer {
-  background-color: black;
+  height: 50px;
+  background-color: #363636;
+
+  li {
+    margin-top: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: grey;
+  }
 }
+

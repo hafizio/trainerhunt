@@ -1,0 +1,12 @@
+$color-orange: #FFBC2A;
+
+.btn-register {
+  color: $color-orange;
+  border: 2px solid $color-orange;
+  background: transparent;
+
+  &:hover {
+    color: white;
+    background-color: $color-orange;
+  }
+}
