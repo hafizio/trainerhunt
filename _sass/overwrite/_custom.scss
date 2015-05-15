@@ -20,13 +20,17 @@ hr {
 .space-top {
   margin-top: 50px;
 }
+.glyphicon {
+  color: black;
+  margin-right: 5px;
+}
 
 #quote {
   margin-top: 20px;
   background: url('https://s3-ap-southeast-1.amazonaws.com/trainerhunt/assets/images/bg/discuss.png') no-repeat scroll;
   background-size: 100%;
   color: white;
-  text-align: center;
+  text-align: right;
   padding: 70px;
 
   ul {
