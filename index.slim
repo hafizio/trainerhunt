@@ -7,42 +7,52 @@ layout: default
     h4 Introducing TrainerHunt. A premier marketplace of professional trainers online directory.
   .row
     .col-lg-6
-      h2 Don't Worry We've Got You Covered
+      h2.bold Don't Worry We've Got You Covered
+      hr
       .row
         .col-lg-6
-          h4 No Comisssion
-          p Whatever you earn when a customer engages you is all yours! We do not take commission on business your transaction.
+          h4.orange Get Leads
+          p At TrainerHunt we offer only warm referrals and a flood of new prospects with a need for your services.  Wouldn’t it be optimal for your business to effortlessly convert prospects into clients without you making a single call?
         .col-lg-6
-          h4 Potential Customers
-          p We will market TrainerHunt as the best source of reference for companies to look for the right trainers for their training needs.
+          h4.orange Get Paid
+          p Get paid and not played.  Leave the worry of your invoices getting lumped together and lost in between piles to TrainerHunt.  We’ll do the follow up and collection. You just need to show up. Complete the training and payment will be disbursed.  Sounds good?
       .row
         .col-lg-6
-          h4 Monitor Eyeballs
-          p Keep track of how many people are viewing your profile page and following you. Use it to improve the quality of your service.
+          h4.orange Get Exposed
+          p We will constantly marketing TrainerHunt as the best source of reference for companies to look for the right trainers for their training needs. Surely you don’t want to play second fiddle to your competitors and miss out on being spotted by your potential customers.
         .col-lg-6
-          h4 Awesome Promotions
-          p We work with strategic partners to bring value to you. Discounts on seminars, workshops, etc all to improve your skills.
-    .col-lg-6
-      h1 "Trainerhunt is the best! They provide the most hassle free service in Asia"
-      p "- Wan Adli"
+          h4.orange Get Support
+          p Not a HRDF registered entity? That’s okay because we are and you are more than welcome to ride on us as long as you are a certified HRDF trainer. Be part of TrainerHunt’s family because we always take care of our own.
+    .col-lg-6#quote
+      h3 "I love to share and educate. I never wanted to be bogged down by the business. So I’m going to let TrainerHunt take care of that."
+      p Dr William Teh
+      p Lean Management Expert
   .row
     .col-lg-6
-      h2 Like To Know More?
-      p Can't find what your're looking for?
-      p Just drop us a note and we will get
-      p back to your in 3-5 working days.
+      h2.bold What are you waiting for?
+      hr
+      p Drop us your details and let’s start doing business.
     .col-lg-6
-      form action="//formspree.io/ibnukamy@gmail.com" method="POST"
+      form
         .form-group.form-inline
-          input type="hidden" name="_subject" value="New Message!"
-          input type="hidden" name="_cc" value="wanadli@gmail.com"
-          input type="text" name="_gotcha" style="display:none"
-          input type="hidden" name="_next" value="/"
-          input.form-control placeholder="Name" type="text" name="name"
-          input.form-control placeholder="Phone" type="tel" name="phone"
+          input.form-control placeholder="Name" type="text"
+          input.form-control placeholder="Phone" type="tel"
+          input.form-control placeholder="Email" type="email"
         .form-group
-          input.form-control placeholder="Email" type="email" name="_replyto"
+          label What is your category of training?
+          br
+          select.selectpicker multiple="" 
+            option value="leadership" Leadership
+            option value="management" Management
+            option value="sales" Sales
+            option value="marketing" Marketing
         .form-group
-          textarea.form-control placeholder="Message" type="text" name="message"
+          label Are you a certified HRDF trainer?
+          input name="hrdf_trainer" type="radio" value="true" Yes
+          input name="hrdf_trainer" type="radio" value="false" No
+        .form-group
+          label Do you own a HRDF registered company?
+          input name="hrdf_company" type="radio" value="true" Yes
+          input name="hrdf_company" type="radio" value="false" No
         .form-group
           button.btn.btn-default type="submit" value="send" Send
