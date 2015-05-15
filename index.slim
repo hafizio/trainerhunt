@@ -34,9 +34,11 @@ layout: default
       p Drop us your details and let’s start doing business.
     .col-lg-6
       form.form
-        .form-group.form-inline
+        .form-group
           input.form-control placeholder="Name" type="text"
+        .form-group
           input.form-control placeholder="Phone" type="tel"
+        .form-group
           input.form-control placeholder="Email" type="email"
         .form-group
           label What is your category of training?
@@ -48,10 +50,12 @@ layout: default
             option value="marketing" Marketing
         .form-group
           label Are you a certified HRDF trainer?
+          br
           input name="hrdf_trainer" type="radio" value="true" Yes
           input name="hrdf_trainer" type="radio" value="false" No
         .form-group
           label Do you own a HRDF registered company?
+          br
           input name="hrdf_company" type="radio" value="true" Yes
           input name="hrdf_company" type="radio" value="false" No
         .form-group
