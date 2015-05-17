@@ -48,7 +48,8 @@ layout: default
       hr
       p.text-right Drop us your details and let’s start doing business.
     .col-lg-7
-      form.form action="https://docs.google.com/forms/d/1zqtbzmAhGaWL_BzvWx1Hm6ANJSJdNtyOrBU_sIJT4UA/formResponse" method="POST"
+      iframe.hidden_iframe style='display:none;' name='hidden_iframe'
+      form.form target='hidden_iframe' action="https://docs.google.com/forms/d/1zqtbzmAhGaWL_BzvWx1Hm6ANJSJdNtyOrBU_sIJT4UA/formResponse" method="POST"
         .form-inline.form-group.col-lg-12
           input#entry_1178398410.form-control placeholder="Name" type="text"
           input#entry_2106879570.form-control placeholder="Phone" type="tel"
