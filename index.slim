@@ -49,7 +49,7 @@ layout: default
       p.text-right Drop us your details and let’s start doing business.
     .col-lg-7
       iframe.hidden_iframe style='display:none;' name='hidden_iframe'
-      form.form target='hidden_iframe' action="https://docs.google.com/forms/d/1zqtbzmAhGaWL_BzvWx1Hm6ANJSJdNtyOrBU_sIJT4UA/formResponse" method="POST"
+      form.form id="reg_form" target='hidden_iframe' action="https://docs.google.com/forms/d/1zqtbzmAhGaWL_BzvWx1Hm6ANJSJdNtyOrBU_sIJT4UA/formResponse" method="POST"
         .form-inline.form-group.col-lg-12
           input#entry_1178398410.form-control placeholder="Name" type="text" name="entry.1178398410"
           input#entry_2106879570.form-control placeholder="Phone" type="tel" name="entry.2106879570"
@@ -100,4 +100,6 @@ layout: default
           input name="pageHistory" type="hidden" value="0"
           input name="fbzx" type="hidden" value="-5620596372208501062"
         .form-inline.form-group.col-lg-12
-          button.btn.btn-orange type="submit" value="send" Let's Get Started
+          button#submit.btn.btn-orange type="submit" value="send" Let's Get Started
+          button#thank.btn.btn-orange.hidden disabled="disabled" Thank You! We'll get in touch soon.
+  

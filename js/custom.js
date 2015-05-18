@@ -1,0 +1,14 @@
+$('a[href^="#reg_form"]').on('click', function(event) {
+  var target = $( $(this).attr('href') );
+  if (target.length) {
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: target.offset().top
+    }, 1000);
+  }
+});
+
+$('form').submit(function() {
+  $('#thank').toggleClass('hidden');
+  $('#submit').addClass('hidden');
+});
