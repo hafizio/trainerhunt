@@ -32,7 +32,22 @@ hr {
   background-size: 100%;
   color: white;
   text-align: right;
-  padding: 70px;
+  padding: 30px;
+
+  /* Small Devices, Tablets */
+  @media only screen and (min-width : 768px) {
+    padding: 50px;
+  }
+
+  /* Medium Devices, Desktops */
+  @media only screen and (min-width : 992px) {
+    padding: 60px;
+  }
+
+  /* Large Devices, Wide Screens */
+  @media only screen and (min-width : 1200px) {
+    padding: 70px;
+  }
 
   ul {
     float: right;
