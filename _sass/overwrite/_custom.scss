@@ -65,20 +65,10 @@ hr {
   }
 }
 
-// forms
+//forms
 @media screen and (min-width: 768px) {
-  input[type="radio"] {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  input[type="tel"] {
+  .form-control {
     margin-right: 10px;
-    margin-left: 10px;
-  }
-
-  button[type="submit"] {
-    margin-top: 10px;
   }
 }
 
@@ -113,3 +103,8 @@ hr {
   }
 }
 
+@media screen and (max-width: 768px) {
+  h1, h2, h3, h4 , h5, h6, p {
+    text-align: center;
+  }
+}
