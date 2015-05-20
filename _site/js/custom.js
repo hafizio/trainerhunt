@@ -12,3 +12,10 @@ $('form').submit(function() {
   $('#thank').toggleClass('hidden');
   $('#submit').addClass('hidden');
 });
+
+$(document).ready(function() {
+  var popup = function() {
+    $('#modal').modal('show');
+  };
+  setInterval(popup, 20000);
+});
