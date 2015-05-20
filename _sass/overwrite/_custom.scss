@@ -108,7 +108,17 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
-  h1, h2, h3, h4 , h5, h6, p {
+  h1, h2, h3, h4 , h5, h6 {
     text-align: center;
   }
+  
+  p {
+    text-align: justify;
+    line-height: 1.5;
+  }
+
+  .navbar-brand {
+    width: 180px;
+  }
 }
+
