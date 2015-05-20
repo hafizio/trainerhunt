@@ -9,8 +9,13 @@ $('a[href^="#reg_form"]').on('click', function(event) {
 });
 
 $('form').submit(function() {
-  $('#thank').toggleClass('hidden');
-  $('#submit').addClass('hidden');
+  window.location.href = "/thank-you";
+});
+
+$('form #referral_form').submit(function() {
+  console.log('Hello');
+  $('button #thank').toggleClass('hidden');
+  $('button #submit').addClass('hidden');
 });
 
 $(document).ready(function() {
