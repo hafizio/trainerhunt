@@ -63,4 +63,25 @@ layout: default
           .form-group
             button#submit.btn.btn-orange type="submit" value="send" Subscribe
             button#thank.btn.btn-orange.hidden disabled="disabled" Thank You! We'll get in touch soon.
-  
+
+button.btn.btn-primary.btn-lg data-target="#modal" data-toggle="modal" type="button"  
+#modal.modal.fade aria-hidden="true" aria-labelledby="modalLabel" role="dialog" tabindex="-1" 
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close aria-label="Close" data-dismiss="modal" type="button" 
+          span aria-hidden="true"  &times;
+        h4#modalLabel.modal-title Subscribe for Updates
+      .modal-body
+        iframe.hidden_iframe style='display:none;' name='hidden_iframe'
+        form target='hidden_iframe' action="https://docs.google.com/forms/d/1zqtbzmAhGaWL_BzvWx1Hm6ANJSJdNtyOrBU_sIJT4UA/formResponse" method="POST"
+          .form-group
+            input#entry_1178398410.form-control placeholder="Name" type="text" name="entry.1178398410"
+          .form-group.space-top.sm
+            input#entry_237626490.form-control placeholder="Email" type="email" name="entry.237626490"
+          input name="draftResponse" type="hidden" value="[,,&quot;-5620596372208501062&quot;]\n"
+          input name="pageHistory" type="hidden" value="0"
+          input name="fbzx" type="hidden" value="-5620596372208501062"
+          .form-group.text-center
+            button#submit.btn.btn-orange type="submit" value="send" Subscribe
+            button#thank.btn.btn-orange.hidden disabled="disabled" Thank You! We'll get in touch soon.

@@ -25,6 +25,10 @@ hr {
 
 .space-top {
   margin-top: 50px;
+
+  &.sm {
+    margin-top: 10px;
+  }
 }
 .glyphicon {
   color: black;
