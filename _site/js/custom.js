@@ -17,5 +17,5 @@ $(document).ready(function() {
   var popup = function() {
     $('#modal').modal('show');
   };
-  setInterval(popup, 20000);
+  setTimeout(popup, 20000);
 });
