@@ -20,7 +20,8 @@ hr {
 
 .orange {
   color: $brand-primary;
-  text-transform: uppercase;
+  //text-transform: uppercase;
+  display: inline-block;
 }
 
 .space-top {
@@ -33,6 +34,7 @@ hr {
 .glyphicon {
   color: black;
   margin-right: 5px;
+  display: inline-block;
 }
 
 #quote {
