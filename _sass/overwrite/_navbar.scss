@@ -2,3 +2,9 @@
   background-color: white;
   border: none;
 }
+
+.navbar-header {
+  &.col-xs-12 {
+    padding: 0px;
+  }
+}
