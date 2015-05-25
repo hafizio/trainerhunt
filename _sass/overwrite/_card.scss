@@ -1,0 +1,38 @@
+section {
+  @include make-row();
+
+  .card-container {
+    @include make-xs-column(12);
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+
+    .glyphicon {
+      order: 1;
+      font-size: x-large;
+      color: black;
+      margin-right: 10px;
+      padding: 5px;
+    }
+
+    .content-container {
+      order: 2;
+      flex-direction: column;
+
+      .title {
+        order: 1;
+        margin: 0px;
+        text-align: left;
+      }
+
+      .caption {
+        order: 2;
+        margin: 0px;
+      }
+    }
+  }
+}

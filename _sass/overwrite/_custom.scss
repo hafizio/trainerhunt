@@ -21,7 +21,8 @@ hr {
 .orange {
   color: $brand-primary;
   //text-transform: uppercase;
-  display: inline-block;
+  //display: inline-flex;
+  text-align: left;
 }
 
 .space-top {
@@ -30,11 +31,6 @@ hr {
   &.sm {
     margin-top: 10px;
   }
-}
-.glyphicon {
-  color: black;
-  margin-right: 5px;
-  display: inline-block;
 }
 
 #quote {
@@ -83,12 +79,16 @@ hr {
   }
 
   .form {
-    margin-top: 30px;
+    &#reg_form {
+      margin-top: 30px;
+    }
   }
 }
 
 .form {
-  padding: 15px;
+  &#reg_form {
+    padding: 15px;
+  }
 }
 
 .form-control {
@@ -99,7 +99,6 @@ hr {
   &:focus {
     border-radius: 2px;
     box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.25);
-    //height: 40px;
   }
 }
 
