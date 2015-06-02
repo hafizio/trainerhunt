@@ -1,3 +1,4 @@
 *.log
 .divshot-cache/*
 .sass-cache/*
+.DS_Store
