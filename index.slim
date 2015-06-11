@@ -48,16 +48,11 @@ layout: default
       h3.bold What are you waiting for?
       p Drop us your details and we'll keep you updated
     .col-lg-4.col-lg-offset-4
-      form.form id="reg_form" action="http://trainerhunt.us11.list-manage1.com/subscribe/post" method="POST"
-        input name="u" type="hidden" value="60117de243f0a4eaa30359f0b"
-        input name="id" type="hidden" value="54f44bbc6a"
+      form.form.js-reg-form
         .form-group
-          input#MERGE1.form-control name="MERGE1" size="25" type="text" value="" placeholder="First Name"
+          input.form-control name="user[name]" size="25" type="text" value="" placeholder="Name"
         .form-group
-          input#MERGE2.form-control name="MERGE2" size="25" type="text" value="" placeholder="Last Name"
-        .form-group
-          input#MERGE0.form-control autocapitalize="off" autocorrect="off" name="MERGE0" size="25" type="email" value="" placeholder="Email"
-        input.hidden name="b_60117de243f0a4eaa30359f0b_54f44bbc6a" tabindex="-1" type="text" value=""
+          input.form-control autocapitalize="off" autocorrect="off" name="user[email]" size="25" type="email" value="" placeholder="Email"
         .form-group.text-center
           button.btn.btn-orange type="submit" value="send" Subscribe
 
@@ -69,15 +64,10 @@ layout: default
           span aria-hidden="true"  &times;
         h4#modalLabel.modal-title Subscribe for Updates
       .modal-body
-        form.form id="modal_reg_form" action="http://trainerhunt.us11.list-manage1.com/subscribe/post" method="POST"
-          input name="u" type="hidden" value="60117de243f0a4eaa30359f0b"
-          input name="id" type="hidden" value="54f44bbc6a"
+        form.form.js-modal-reg-form
           .form-group
-            input#MERGE1.form-control name="MERGE1" size="25" type="text" value="" placeholder="Name"
+            input.form-control name="user[name]" size="25" type="text" value="" placeholder="Name"
           .form-group
-            input#MERGE2.form-control name="MERGE2" size="25" type="text" value="" placeholder="Last Name"
-          .form-group
-            input#MERGE0.form-control autocapitalize="off" autocorrect="off" name="MERGE0" size="25" type="email" value="" placeholder="Email"
-          input.hidden name="b_60117de243f0a4eaa30359f0b_54f44bbc6a" tabindex="-1" type="text" value=""
+            input.form-control autocapitalize="off" autocorrect="off" name="user[email]" size="25" type="email" value="" placeholder="Email"
           .form-group.text-center
             button.btn.btn-orange type="submit" value="send" Subscribe

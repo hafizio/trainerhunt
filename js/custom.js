@@ -9,18 +9,34 @@ $('a[href^="#reg_form"]').on('click', function(event) {
   }
 });
 
-// ajax form
-//$('form #reg_form').submit(function(e) {
-  //e.preventDefault();
-  //$.ajax({
-    //url: 'http://trainerhunt.us10.list-manage.com/subscribe/post',
-    //data: e.formData,
-    //type: 'POST',
-    //success: function() {
-      //window.location.href = "/thank-you";
-    //}
-  //});
-//});
+function ajaxify(d) {
+  var form = $(d).serializeArray();
+  var formData = {};
+  $.each(form, function(i, v) {
+    formData[v.name] = v.value;
+  });
+
+  $.ajax({
+    url: 'http://localhost:3000/api/users',
+    data: formData,
+    type: 'POST',
+    dataType: 'json',
+    success: function() {
+      window.location.href = "/thank-you";
+    }
+  });
+};
+
+// send ajax to API
+$('form.js-reg-form').submit(function(e) {
+  e.preventDefault();
+  ajaxify(this);
+});
+
+$('form.js-modal-reg-form').submit(function(e) {
+  e.preventDefault();
+  ajaxify(this);
+});
 
 // button animation
 $('form #referral_form').submit(function() {
